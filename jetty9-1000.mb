@@ -1,0 +1,54 @@
+ab -n 1000000 -c 1000 "http://10.0.1.111:8080/"
+This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.0.1.111 (be patient)
+Completed 100000 requests
+Completed 200000 requests
+Completed 300000 requests
+Completed 400000 requests
+Completed 500000 requests
+Completed 600000 requests
+Completed 700000 requests
+Completed 800000 requests
+Completed 900000 requests
+Completed 1000000 requests
+Finished 1000000 requests
+
+
+Server Software:        Jetty(8.1.19.v20160209)
+Server Hostname:        10.0.1.111
+Server Port:            8080
+
+Document Path:          /
+Document Length:        12 bytes
+
+Concurrency Level:      1000
+Time taken for tests:   66.268 seconds
+Complete requests:      1000000
+Failed requests:        0
+Total transferred:      84000000 bytes
+HTML transferred:       12000000 bytes
+Requests per second:    15090.34 [#/sec] (mean)
+Time per request:       66.268 [ms] (mean)
+Time per request:       0.066 [ms] (mean, across all concurrent requests)
+Transfer rate:          1237.88 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0   31  21.0     27     360
+Processing:     1   35  22.2     31     340
+Waiting:        1   25  18.5     21     335
+Total:          8   66  29.7     58     510
+
+Percentage of the requests served within a certain time (ms)
+  50%     58
+  66%     60
+  75%     63
+  80%     65
+  90%     73
+  95%    159
+  98%    171
+  99%    184
+ 100%    510 (longest request)
