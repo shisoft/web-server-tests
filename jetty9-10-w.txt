@@ -1,0 +1,29 @@
+weighttp -n 500000 -t 10 -c 10 http://10.0.1.111:8080/
+weighttp 0.4 - a lightweight and simple webserver benchmarking tool
+
+starting benchmark...
+spawning thread #1: 1 concurrent requests, 50000 total requests
+spawning thread #2: 1 concurrent requests, 50000 total requests
+spawning thread #3: 1 concurrent requests, 50000 total requests
+spawning thread #4: 1 concurrent requests, 50000 total requests
+spawning thread #5: 1 concurrent requests, 50000 total requests
+spawning thread #6: 1 concurrent requests, 50000 total requests
+spawning thread #7: 1 concurrent requests, 50000 total requests
+spawning thread #8: 1 concurrent requests, 50000 total requests
+spawning thread #9: 1 concurrent requests, 50000 total requests
+spawning thread #10: 1 concurrent requests, 50000 total requests
+progress:  10% done
+progress:  20% done
+progress:  30% done
+progress:  40% done
+progress:  50% done
+progress:  60% done
+progress:  70% done
+progress:  80% done
+progress:  90% done
+progress: 100% done
+
+finished in 16 sec, 330 millisec and 399 microsec, 30617 req/s, 2481 kbyte/s
+requests: 500000 total, 500000 started, 500000 done, 0 succeeded, 500000 failed, 0 errored
+status codes: 500000 2xx, 0 3xx, 0 4xx, 0 5xx
+traffic: 41500000 bytes total, 41500000 bytes http, 0 bytes data
