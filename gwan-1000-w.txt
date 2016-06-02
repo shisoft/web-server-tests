@@ -1,0 +1,66 @@
+weighttp -n 500000 -t 28 -c 1000 http://10.0.1.111:8080/
+...
+error: connect() failed: Connection refused (111)
+error: connect() failed: Connection refused (111)
+error: connect() failed: Connection refused (111)
+error: connect() failed: Connection refused (111)
+error: connect() failed: Connection refused (111)
+error: connect() failed: Connection refused (111)
+error: connect() failed: Connection refused (111)
+error: connect() failed: Connection refused (111)
+error: connect() failed: Connection refused (111)
+error: connect() failed: Connection refused (111)
+error: connect() failed: Connection refused (111)
+
+finished in 10 sec, 157 millisec and 677 microsec, 49223 req/s, 2320 kbyte/s
+requests: 500000 total, 500000 started, 500000 done, 0 succeeded, 500000 failed, 0 errored
+status codes: 0 2xx, 317645 3xx, 0 4xx, 0 5xx
+traffic: 24141020 bytes total, 24141020 bytes http, 0 bytes data
+
+////////////////////////////////////////////////////////////////
+
+sudo ./gwan
+
+loading..............................................
+           hello.lua: to use  .lua scripts, install Lua..
+            hello.go: to use   .go scripts, install Go........
+            loan.php: to use  .php scripts, install PHP...
+            hello.js: to use   .js scripts, install Javascript........
+           hello.php: to use  .php scripts, install PHP.
+
+
+
+_________________________________________________________________
+|                                                               |
+| G-WAN Web App. Server v7.12.6   64-bit (Feb  8 2016 16:33:28) |
+|_______________________________________________________________|
+
+ pid:31225
+
+
+
+Could not attach to process.  If your uid matches the uid of the target
+process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try
+again as the root user.  For more details, see /etc/sysctl.d/10-ptrace.conf
+ptrace: Operation not permitted.
+No frame selected.
+
+
+
+Signal        : 11:Address not mapped to object
+Signal src    : 1:.
+errno         : 0
+Thread        : 10
+Code   Pointer: 000000404f4c module:gwan function:?? line:0
+Access Address: 000000000018
+
+Registers     : EAX=ffffffffffffffff CS=00000033 EIP=000000404f4c EFLGS=000000010246
+                EBX=7fa0b19ff000 SS=00000000 ESP=7fa0d8ffa170 EBP=7fa0d8ffa1c0
+                ECX=000000000008 DS=00000000 ESI=0000ffffffff FS=00000033
+                EDX=000000000008 ES=00000000 EDI=7fa0b1a009b0 CS=00000033
+
+Module         :Function        :Line # PgrmCntr(EIP)  RetAddress  FramePtr(EBP)
+
+No available stack frames
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1]    31224 segmentation fault (core dumped)  sudo ./gwan
