@@ -1,0 +1,56 @@
+ab -n 1000000 -c 500 "http://10.0.1.111:8080/?hello.c"
+This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.0.1.111 (be patient)
+apr_socket_recv: Connection reset by peer (104)
+Total of 25445 requests completed
+
+///////////////////////////////////////////////////////////////////
+
+sudo ./gwan
+
+loading..............................................
+           hello.lua: to use  .lua scripts, install Lua..
+            hello.go: to use   .go scripts, install Go........
+            loan.php: to use  .php scripts, install PHP...
+            hello.js: to use   .js scripts, install Javascript........
+           hello.php: to use  .php scripts, install PHP.
+
+
+
+_________________________________________________________________
+|                                                               |
+| G-WAN Web App. Server v7.12.6   64-bit (Feb  8 2016 16:33:28) |
+|_______________________________________________________________|
+
+ pid:20808
+
+
+
+Could not attach to process.  If your uid matches the uid of the target
+process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try
+again as the root user.  For more details, see /etc/sysctl.d/10-ptrace.conf
+ptrace: Operation not permitted.
+No frame selected.
+
+
+
+Signal        : 11:Address not mapped to object
+Signal src    : 1:.
+errno         : 0
+Thread        : 10
+Code   Pointer: 000000404f4c module:gwan function:?? line:0
+Access Address: 000000000018
+
+Registers     : EAX=ffffffffffffffff CS=00000033 EIP=000000404f4c EFLGS=000000010246
+                EBX=7f26009fd000 SS=00000000 ESP=7f2604ffa170 EBP=7f2604ffa1c0
+                ECX=000000000008 DS=00000000 ESI=0000ffffffff FS=00000033
+                EDX=000000000008 ES=00000000 EDI=7f26009fe9b0 CS=00000033
+
+Module         :Function        :Line # PgrmCntr(EIP)  RetAddress  FramePtr(EBP)
+
+No available stack frames
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1]    20807 segmentation fault (core dumped)  sudo ./gwan
