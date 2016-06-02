@@ -1,0 +1,47 @@
+weighttp -n 500000 -t 28 -c 100 http://10.0.1.111:8080/
+weighttp 0.4 - a lightweight and simple webserver benchmarking tool
+
+starting benchmark...
+spawning thread #1: 4 concurrent requests, 17858 total requests
+spawning thread #2: 4 concurrent requests, 17858 total requests
+spawning thread #3: 4 concurrent requests, 17858 total requests
+spawning thread #4: 4 concurrent requests, 17858 total requests
+spawning thread #5: 4 concurrent requests, 17857 total requests
+spawning thread #6: 4 concurrent requests, 17857 total requests
+spawning thread #7: 4 concurrent requests, 17857 total requests
+spawning thread #8: 4 concurrent requests, 17857 total requests
+spawning thread #9: 4 concurrent requests, 17857 total requests
+spawning thread #10: 4 concurrent requests, 17857 total requests
+spawning thread #11: 4 concurrent requests, 17857 total requests
+spawning thread #12: 4 concurrent requests, 17857 total requests
+spawning thread #13: 4 concurrent requests, 17857 total requests
+spawning thread #14: 4 concurrent requests, 17857 total requests
+spawning thread #15: 4 concurrent requests, 17857 total requests
+spawning thread #16: 4 concurrent requests, 17857 total requests
+spawning thread #17: 3 concurrent requests, 17857 total requests
+spawning thread #18: 3 concurrent requests, 17857 total requests
+spawning thread #19: 3 concurrent requests, 17857 total requests
+spawning thread #20: 3 concurrent requests, 17857 total requests
+spawning thread #21: 3 concurrent requests, 17857 total requests
+spawning thread #22: 3 concurrent requests, 17857 total requests
+spawning thread #23: 3 concurrent requests, 17857 total requests
+spawning thread #24: 3 concurrent requests, 17857 total requests
+spawning thread #25: 3 concurrent requests, 17857 total requests
+spawning thread #26: 3 concurrent requests, 17857 total requests
+spawning thread #27: 3 concurrent requests, 17857 total requests
+spawning thread #28: 3 concurrent requests, 17857 total requests
+progress:   9% done
+progress:  19% done
+progress:  29% done
+progress:  39% done
+progress:  49% done
+progress:  59% done
+progress:  69% done
+progress:  79% done
+progress:  89% done
+progress:  99% done
+
+finished in 7 sec, 574 millisec and 574 microsec, 66010 req/s, 5350 kbyte/s
+requests: 500000 total, 500000 started, 500000 done, 0 succeeded, 500000 failed, 0 errored
+status codes: 500000 2xx, 0 3xx, 0 4xx, 0 5xx
+traffic: 41500000 bytes total, 41500000 bytes http, 0 bytes data
